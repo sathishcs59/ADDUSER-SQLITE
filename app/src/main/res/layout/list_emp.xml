@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/list_user_layout"
+        style="@style/SettingsLayout">
+
+        <ImageView
+            style="@style/SettingsIcon"
+            android:src="@drawable/ic_user"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_user_name"
+                style="@style/SettingsText"
+                android:text="Account Name"/>
+
+            <TextView
+                android:id="@+id/list_user_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/list_user_role"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="15sp"
+                android:layout_marginTop="3dp"
+                android:text=""/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
